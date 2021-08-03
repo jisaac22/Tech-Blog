@@ -20,6 +20,10 @@ Blog.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    blogInfo: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
