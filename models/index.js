@@ -1,6 +1,7 @@
 // require user and blog models
 const User = require('./User');
 const Blog = require('./Blog');
+const Comment = require('./comment')
 
 // User has many Blogs while Blogs belongs to User
 
@@ -13,4 +14,13 @@ Blog.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Blog }
+Blog.hasMany(Comment, {
+    foreignKey: 'blog_id',
+    onDelete: 'CASCADE'
+});
+
+Comment.belongsTo(Blog, {
+    foreignKey: 'blog_id'
+});
+
+module.exports = { User, Blog, Comment }
