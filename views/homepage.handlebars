@@ -10,6 +10,10 @@
     <p>
       {{blog.description}}
     </p>
+  {{#if logged_in}}
+  <button id='commentBtn'>Comment</button> 
+  {{/if}}
   </div>
 </div>
+
 {{/each}}
