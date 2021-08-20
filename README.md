@@ -21,3 +21,10 @@ node
 Here is my contact information for additional questions
 Github: (https://github.com/jisaac22)
 Email: jacobisaac22@yahoo.com
+
+### Screen Shots
+![Screenshot (6)](https://user-images.githubusercontent.com/82920643/130297649-5079943f-5baa-4c26-9cfb-a69dec82c190.png)
+
+![Screenshot (7)](https://user-images.githubusercontent.com/82920643/130297676-387c305d-e693-4d9c-a698-3588bbbdce26.png)
+
+![Screenshot (8)](https://user-images.githubusercontent.com/82920643/130297697-d307606f-d8ca-40fc-b847-624d41f1bb76.png)
