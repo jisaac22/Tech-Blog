@@ -10,10 +10,13 @@
     <p>
       {{blog.description}}
     </p>
-  {{#if logged_in}}
-  <button id='commentBtn'>Comment</button> 
-  {{/if}}
-  </div>
+    {{#if blog.logged_in}}
+    <button>Comment</button>
+    {{/if}}
+   </div>
 </div>
+  {{!-- <button class="no-button" data-id="comment" id='commentBtn'>Comment</button> --}}
+{{/each}} 
 
-{{/each}}
+
+<script scr="js/comment.js"></script>
