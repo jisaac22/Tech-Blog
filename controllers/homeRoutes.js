@@ -85,11 +85,20 @@ router.get('/login', (req, res) => {
 
   router.get('/signup', (req, res) => {
     if (req.session.logged_in){
-      res.redirect('/profile');
+      // res.redirect('/profile');
       return;
     }
     res.render('signup')
-  })
+  });
   
+  router.get('/create', withAuth, (req, res) => {
+    if (!req.session.logged_in){
+      res.redirect('/profile');
+      return;
+    }
+    res.render('create')
+  });
+
+
   module.exports = router;
   
