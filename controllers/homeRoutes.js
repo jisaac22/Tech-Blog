@@ -91,12 +91,15 @@ router.get('/login', (req, res) => {
     res.render('signup')
   });
   
-  router.get('/create', withAuth, (req, res) => {
-    if (!req.session.logged_in){
-      res.redirect('/profile');
+  router.get('/create', (req, res) => {
+    if (req.session.logged_in){
+      res.render('create', {
+        logged_in: true
+      });
+      
       return;
     }
-    res.render('create')
+    res.redirect('/login')
   });
 
 
