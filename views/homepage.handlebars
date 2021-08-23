@@ -6,12 +6,12 @@
     </h2>
     <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
   </div>
-  <div class="col-md-7">
+  <div class="col-md-7 cmt">
     <p>
       {{blog.description}}
     </p>
     {{#if blog.logged_in}}
-    <button>Comment</button>
+    <button class="comment" >Comment</button>
     {{/if}}
    </div>
 </div>
@@ -19,4 +19,4 @@
 {{/each}} 
 
 
-<script scr="js/comment.js"></script>
+<script src="js/comment.js"></script>
